@@ -1,0 +1,313 @@
+.gradient-background {
+    background: linear-gradient(-78deg, 
+      #643686 45%,   /* purple */
+      #CCC6DE 75%,  /* lavander */
+      #9FD1CB 80%,  /* ment */
+      #F0EE8F 85%,  /* yellow */
+      #E28F5D 95%   /* orange */
+    );
+    /* You can adjust the percentages and colors as per your design */
+    height: 420vh; /* Adjust the height as needed */
+    width: 100%;
+  }
+
+  *{
+    font-family: 'Sulphur Point', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
+  /*  */
+  .header{
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+   
+ 
+ }
+
+ .navbar {
+  margin-top: 2%;
+  margin-right: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  
+}
+
+.header .navbar a{
+  margin-left: 2rem;
+  font-size: 1.3rem;
+  color: #303030;
+  transition: .2s linear;
+  text-decoration: none;
+  font-weight:bold ;
+  height: 2.5%;
+  width: 6%;
+  background-color: rgb(240, 248, 255,.5);
+  text-align: center;
+  border-radius:3rem;;
+  backdrop-filter: blur(.1rem);
+}
+
+.header .navbar a:hover{
+  color: #bdb8c9;
+  height: 3%;
+  width: 7%;
+}
+
+/*  */
+
+.logo{
+
+text-align: center;
+
+}
+
+.geoid{
+
+margin-bottom: -4rem;
+margin-top: 7rem;
+text-align: center;
+
+}
+
+.geok{
+
+font-size: 60px;
+font-weight: bold;
+color: #303030;
+
+}
+
+.description{
+
+  font-size: 30px;
+  font-weight: lighter;
+  color: #303030;
+
+}
+
+/*  */
+
+.map{
+
+margin-top: 10rem;
+width: 75%;
+height: 50vh;
+background-color: rgb(240, 248, 255,.5);
+border-radius: 3rem;
+display: flex;
+justify-content: space-around;
+text-align: center;
+align-items: center;
+align-self: flex-end ;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+
+
+.mapt{
+
+width: 25rem;
+height: 100%;
+display: flex;
+align-items:flex-start;
+justify-content: center;
+flex-direction: column;
+/* position: relative; */
+
+
+}
+
+.map1{
+  text-align: left;
+  font-size: 50px;
+  font-weight: bold;
+  color: #303030;
+  cursor: pointer;
+  
+
+}
+
+.map1:hover{
+
+  color: #bdb8c9;
+  font-size: 55px;
+  /* height: .1rem; */
+  
+
+}
+
+.map2{
+
+  font-size: 20px;
+  font-weight: lighter;
+  color: #303030;
+  text-align:left;
+
+}
+
+.mapi{
+
+width: 20rem;
+height: 20rem;
+cursor: pointer;
+
+}
+
+
+.mapi:hover{
+
+  width: 21rem;
+  height: 21rem;
+  
+}
+
+
+/*  */
+
+.footer{
+
+background-color: rgb(240, 248, 255, .5);
+width: 90%;
+height: 10rem;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10rem;
+text-align: left;
+display:flex;
+justify-content: center;
+border-radius: 3rem;
+color: #303030;
+align-items: center;
+
+
+
+}
+
+
+.line{
+
+  border-left: 3px solid #303030;
+  height: 100px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}
+
+.passion{
+
+  font-size: 30px;
+  font-weight: bold;
+  align-self: flex-start;
+  margin-top: 1.2rem;
+}
+
+.names{
+
+  align-items: center;
+  font-weight: normal;
+  font-size: 17px;
+  cursor: pointer;
+ 
+
+}
+
+.linkedin{
+
+  text-decoration: none;
+  color: #303030;
+  align-items: center;
+  font-weight: normal;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+.linkedin:hover{
+
+  color: #bdb8c9;
+
+}
+
+
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+/* start media */
+
+@media screen and (max-width:600px) {
+  
+  .map {
+    flex-direction: column;
+    width: 90%;
+    height: 70vh;
+    /* text-align: center; */
+  }
+  .mapt {
+    width: 15rem;
+  }
+  
+}
+
+
+
+
+@media screen and (max-width:1020px) {
+  .gradient-background{
+
+    height: 500vh;
+    
+  }
+
+  .map {
+    flex-direction: column;
+    width: 90%;
+    height: 70vh;
+    /* text-align: center; */
+  }
+  .mapt {
+    width: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+.map1{
+  text-align: left;
+  font-size: 50px;
+  font-weight: bold;
+  color: #303030;
+  
+
+}
+  
+.header .navbar a{
+
+  height: 2rem;
+  width: 4rem;
+
+}
+
+.header .navbar a:hover{
+
+  height: 2.5rem;
+  width: 4.5rem;
+}
+
+}
+
+/* end media */

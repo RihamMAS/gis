@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/gis.css">
+</head>
+<body>
+
+
+
+
+    <div class="my_introduction" >
+
+       
+        <div id="shild">
+            
+        </div>
+        <h1 id="thead" >Geographic Information System </h1>
+
+        <div id="info" >
+
+            <p class="p_one"> "Welcome to our exciting world of GIS! GIS stands for Geographic Information System.
+                It's a fascinating technology that helps us understand and explore our planet Earth.
+                    With GIS, we can collect, analyze, and visualize information about places, such as maps,
+                satellite images, and data about different features like cities,
+                    rivers, mountains, and even animal habitats!" </p>
+        </div>
+
+    </div>
+
+    <!-- introduction section end -->
+
+    <!-- video section start  -->
+    
+    <div class="vid" >
+        <video id="slider" autoplay   >
+            <source id="MYVIDEO" src="VIDEO/M1.mp4" type="video/mp4" >
+        </video>
+
+        <ul class="navigation" > 
+            <li class="corser" ><img  class="im" onclick="video('VIDEO/M1.mp4')" src="img/gis.jpg" alt=""></li>
+            <li class="corser" ><img  class="im" onclick="video('VIDEO/M2.mp4')" src="img/gis for.jpg" alt=""></li>
+            <li class="corser" ><img  class="im"  onclick="video('VIDEO/M3.mp4')" src="img/3.jpg" alt=""></li>
+            <li class="corser" ><img  class="im"  onclick="video('VIDEO/M4.mp4')" src="img/gis for.jpg" alt=""></li>
+        </ul>
+
+    </div>
+
+    <!-- video section end -->
+
+    <!-- GAME SECTION START  -->
+
+    
+    <div class="container">
+
+        <div class="left"> 
+            <div class="item">
+                <img src="img_two/worldmap1.png"      alt=""       draggable="true"    ondragstart="drag(event)" >
+            </div>
+            <div class="item">
+                <img src="img_two/worldmap2.png"        alt=""        draggable="true"   ondragstart="drag(event)" >
+            </div> 
+            <div class="item">
+                <img src="img_two/worldmap3.png" alt=""        draggable="true"   ondragstart="drag(event)" >
+            </div>
+            <div class="item">
+                <img src="img_two/worldmap4.png"      alt=""        draggable="true"   ondragstart="drag(event)" >
+            </div>
+
+        </div> 
+
+
+
+        
+        <div class="right">
+            <div class="mockup">
+                <div  id="graphic" class="graphic map2" ondrop="drop(event, 'map2')" ondragover="allowdrop(event)"> </div>
+                <div  id="graphic" class="graphic map3" ondrop="drop(event, 'map3')" ondragover="allowdrop(event)" > </div>
+                <div  id="graphic" class="graphic map4" ondrop="drop(event, 'map4')" ondragover="allowdrop(event)" > </div>
+                <div  id="graphic" class="graphic map5" ondrop="drop(event, 'map5')" ondragover="allowdrop(event)" > </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- GAME SECTION END -->
+
+    <script src="js/gis.js" ></script>
+    
+</body>
+</html>

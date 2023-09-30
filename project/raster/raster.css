@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap');
+
+body, h1, p
+{
+  margin: 0;
+  padding: 0;
+  font-family: "Sulphur point ", sans-serif;
+  background-color: #ccc6de;
+ 
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Change to row to make them side by side */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-between; /* Add space between the sections */
+}
+
+.container .section {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+
+}
+
+.container.section.game {
+    flex: 1; /* Takes up half of the container's width */
+    max-width: calc(50% - 10px); /* Adjust as needed and consider padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+    padding: 20px; /* Add padding for spacing */
+    display: block;
+    position: relative;
+    height: 40rem;
+    overflow: hidden;
+    border-radius: .5rem;
+   object-fit: cover;
+
+}
+
+/* Style the image
+img {
+    max-width: 100%; Make the image responsive
+    height: auto;
+    display: block;
+} */
+
+/* Style the text container */
+.container.section.text {
+    flex: 1; /* Takes up half of the container's width */
+    max-width: calc(50% - 10px); /* Adjust as needed and consider padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+    padding: 20px; /* Add padding for spacing */
+    
+}
+
+/* Style the text elements */
+h1 {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #303030;
+    font-weight:bold;
+}
+
+p {
+    font-size: 20px; /* Adjust the font size as needed */
+    color: #303030;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack elements on smaller screens */
+    }
+    .game,
+    .text {
+      max-width: 100%; /* Full width for both image and text */
+    }
+    .text {
+      order: -1; /* Move the text section above the game section on smaller screens */
+    }
+  }
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    color: white;
+}
+
+/* h1 {
+    background: #7F7FD5;
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+.container {
+    height: 100%;
+    display: flex;
+}
+
+#toolbar {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 70px;
+    background-color: #202020;
+}
+
+#toolbar * {
+    margin-bottom: 6px;
+}
+
+#toolbar label {
+    font-size: 12px;
+}
+
+#toolbar input {
+    width: 100%;
+}
+
+#toolbar button {
+    background-color: #1565c0;
+    border: none;
+    border-radius: 4px;
+    color:white;
+    padding: 2px;
+}
+header{
+    width: 50%;
+    color: #303030;
+    padding:10px ;
+    text-align: center;
+    margin-left: 10rem;
+    margin-right: auto;
+    
+}
+.text{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: 5rem;
+}
+.game{
+    align-items:center;
+    margin-top: auto;
+    margin-bottom: auto;
+  
+    
+    display: flex;
+    justify-content: space-around;
+}
